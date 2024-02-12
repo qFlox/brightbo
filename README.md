@@ -7,10 +7,13 @@
 <p align="center">Just a little bot in a big world.</p>
 
 
-### This project is still in development !!!
-#### This mean's it will probably not completely work :)
+### This project is in development!
+#### This means there will be lots of bugs.
 
 # Extra Info
+
+## Version Support
+BrightBo currently runs on discord.js v13, we plan to update to v14 soon.
 
 ## Contributions
 We will review and help with all reasonable pull requests as long as the guidelines below are met.
