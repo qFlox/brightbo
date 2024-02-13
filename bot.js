@@ -1,47 +1,69 @@
+const { Client, Collection, GatewayIntentBits } = require('discord.js');
+const { REST } = require('@discordjs/rest');
+const { Routes } = require('discord-api-types/v9');
 const fs = require('fs');
-const Discord = require('discord.js');
 const config = require('./config.json');
-const client = new Discord.Client();
-client.commands = new Discord.Collection();
+
+client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages] });
+
+client.commands = new Collection();
+client.slashCommands = new Collection();
 
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
 for (const file of commandFiles) {
-    const command = require(`./commands/${file}`);
-    client.commands.set(command.name, command);
+  const command = require(`./commands/${file}`);
+  client.commands.set(command.data.name, command);
+  if (command.slashCommand) {
+    client.slashCommands.set(command.slashCommand.data.name, command.slashCommand);
+  }
 }
 
-const activities = [
-    { name: 'your server', type: 'WATCHING' },
-    { name: 'to you', type: 'LISTENING' },
-    { name: 'with code', type: 'PLAYING' }
-];
-let i = 0;
+const activities = config.activities;
+let currentActivity = 0;
 
 client.once('ready', () => {
-    console.log('Bot is online!');
-    setInterval(() => {
-        client.user.setActivity(activities[i].name, { type: activities[i].type });
-        i = (i + 1) % activities.length;
-    }, 15 * 1000); // change 15 to the amount of seconds between activity change or leave the same.
+  console.log('Ready!');
+  setInterval(() => {
+    client.user.setActivity(activities[currentActivity]);
+    currentActivity = (currentActivity + 1) % activities.length;
+  }, 12000);
+
+  client.guilds.cache.forEach(guild => {
+    const rest = new REST({ version: '9' }).setToken(config.token);
+    rest.put(Routes.applicationGuildCommands(client.user.id, guild.id), { body: client.slashCommands.map(c => c.data.toJSON()) })
+      .then(() => console.log(`Slash commands registered for guild ${guild.name}`))
+      .catch(console.error);
+  });
 });
 
-client.on('message', message => {
-    if (!message.content.startsWith(config.prefix) || message.author.bot) return; // Set prefix in config.json
+client.on('guildCreate', guild => {
+  const rest = new REST({ version: '9' }).setToken(config.token);
+  rest.put(Routes.applicationGuildCommands(client.user.id, guild.id), { body: client.slashCommands.map(c => c.data.toJSON()) })
+    .then(() => console.log(`Slash commands registered for guild ${guild.name}`))
+    .catch(console.error);
+});
 
-    const args = message.content.slice(config.prefix.length).trim().split(/ +/);
-    const commandName = args.shift().toLowerCase();
+client.on('messageCreate', async message => {
+  if (message.author.bot) return;
 
-    if (!client.commands.has(commandName)) return;
+  const args = message.content.slice(config.prefix.length).trim().split(/ +/);
+  const commandName = args.shift().toLowerCase();
 
-    const command = client.commands.get(commandName);
+  const command = client.commands.get(commandName);
 
-    try {
-        command.execute(message, args);
-    } catch (error) {
-        console.error(error);
-        message.reply('There was an error executing that command!');
+  if (!command) return;
+
+  try {
+    if (command.slashCommand) {
+      await command.executeSlash(message, args);
+    } else {
+      await command.execute(message, args);
     }
+  } catch (error) {
+    console.error(error);
+    message.reply('There was an error trying to execute that command!');
+  }
 });
 
-client.login(config.token); // Set token in config.json
+client.login(config.token);
