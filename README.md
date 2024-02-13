@@ -16,6 +16,8 @@
 BrightBo currently runs on discord.js v13, we plan to update to v14 soon.
 
 ## Contributions
+### To help keep this project alive, try contributing to help improve it.
+
 We will review and help with all reasonable pull requests as long as the guidelines below are met.
 
 - The license header must be applied to all java source code files.
