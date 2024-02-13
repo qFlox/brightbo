@@ -1,4 +1,10 @@
 {
-    "prefix": ".",
-    "token": "YOUR-BOTS-TOKEN-HERE"
+  "prefix": "choose-bot-prefix",
+  "token": "your-token-here",
+  "activities": [
+    "Activity 1",
+    "Activity 2",
+    "Activity 3",
+    "Activity 4"
+  ]
 }
