@@ -1,8 +1,12 @@
+# Notice
+## We are completely re structuring + re making the bot.
+## This means all previous files will be deleted we will
+## commit the changes once we finish the new version.
+
 
 <p align="center">
 <img src="" alt="" width="15%"/>
 </p>
-
 <h1 align="center">BrightBo</h1>
 <p align="center">Just a little bot in a big world.</p>
 
@@ -11,9 +15,6 @@
 #### This means there will be lots of bugs.
 
 # Extra Info
-
-## Version Support
-BrightBo currently runs on discord.js v13, we plan to update to v14 soon.
 
 ## Contributions
 ### To help keep this project alive, try contributing to help improve it.
