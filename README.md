@@ -1,7 +1,7 @@
 # Notice
 ## We are completely re structuring + re making the bot.
-## This means all previous files will be deleted we will
-## commit the changes once we finish the new version.
+## This means all previous files will be deleted.
+## We will commit the changes once we finish the new version.
 
 
 <p align="center">
