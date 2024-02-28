@@ -3,7 +3,6 @@ const { SlashCommandBuilder } = require("@discordjs/builders");
 
 const prefix = {
   name: "ping",
-  aliases: ["pong"],
   cooldown: 5000,
   ownerOnly: false,
   run: async (client, message, args) => {
