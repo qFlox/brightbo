@@ -19,7 +19,7 @@ module.exports = {
     };
 
     updateActivity();
-    setInterval(updateActivity, 1000);
+    setInterval(updateActivity, 30000);
 
     console.log(' ');
     console.info(' |       _                   _          ');
