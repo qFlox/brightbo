@@ -2,7 +2,7 @@
 <img src="" alt="" width="15%"/>
 </p>
 <h1 align="center">BrightBo</h1>
-<p align="center">Just a little bot in a big world.</p>
+<p align="center">Just a simple discord.js v14 bot.</p>
 
 # Info
 ### This project may have some bugs, report them in the issues tab.
