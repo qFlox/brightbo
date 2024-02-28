@@ -1,20 +1,11 @@
-# Notice
-## We are completely re structuring + re making the bot.
-## This means all previous files will be deleted.
-## We will commit the changes once we finish the new version.
-
-
 <p align="center">
 <img src="" alt="" width="15%"/>
 </p>
 <h1 align="center">BrightBo</h1>
 <p align="center">Just a little bot in a big world.</p>
 
-
-### This project is in development!
-#### This means there will be lots of bugs.
-
-# Extra Info
+# Info
+### This project may have some bugs, report them in the issues tab.
 
 ## Contributions
 ### To help keep this project alive, try contributing to help improve it.
