@@ -1,5 +1,5 @@
 <p align="center">
-<img src="" alt="" width="15%"/>
+<img src="https://i.imgur.com/gVFCPok.png" alt="" width="15%"/>
 </p>
 <h1 align="center">BrightBo</h1>
 <p align="center">Just a simple discord.js v14 bot.</p>
