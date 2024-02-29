@@ -1,8 +1,6 @@
 <div align="center">
    <img src="https://i.imgur.com/gVFCPok.png" />
 </div>
-<h1 align="center">BrightBo</h1>
-<p align="center">Just a simple discord.js v14 bot.</p>
 
 # Info
 ### This project may have some bugs, report them in the issues tab.
