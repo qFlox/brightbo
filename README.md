@@ -1,6 +1,6 @@
-<p align="center">
-<img src="https://i.imgur.com/gVFCPok.png" alt="" width="15%"/>
-</p>
+<div align="center">
+   <img src="[/assets/banner.png](https://i.imgur.com/gVFCPok.png)" />
+</div>
 <h1 align="center">BrightBo</h1>
 <p align="center">Just a simple discord.js v14 bot.</p>
 
