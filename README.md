@@ -9,10 +9,6 @@
 ## Notice
 - This porject only contains 1 example command.
 - We plan to add more commmands in the future.
-- Pull requests containing commands should be placed like this - commands/(your-username-here)
-- Pull requests containing commands should NEVER be added to existing command folders.
-- Pull requests containing commands that require editing / addition to code outside of the command folder
-should be changed normally.
 
 ## Requirements
 
@@ -44,6 +40,10 @@ npm install
 
 We will review and help with all reasonable pull requests as long as the guidelines below are met.
 
+- Pull requests containing commands should be placed like this - commands/(your-username-here)
+- Pull requests containing commands should NEVER be added to existing command folders.
+- Pull requests containing commands that require editing / addition to code outside of the command folder
+should be changed normally.
 - System-related files should be added to the `.gitignore`, never committed in pull requests.
 - In general, check existing code to make sure your code matches relatively close to the code already in the project.
 - Favour readability over compactness.
