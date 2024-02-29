@@ -6,6 +6,15 @@
 
 ---
 
+## How to host this bot (or any other bot) for free.
+- Go to this link - https://my.optikservers.com/join/HTeOIIt2thUvxg0K
+- Sign up to optikservers using the link above using your Discord account.
+- Press the 'Create server' button in the top left corner.
+- Give the server 80% cpu, 2000MB ram and 2gb disk/storage and mak sure to name it at the top
+- Select the (Node.JS) option.
+- Wait for the server to install.
+- Follow the instructions in the how to use section.
+
 ## Notice
 - This porject only contains 1 example command.
 - We plan to add more commmands in the future.
