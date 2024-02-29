@@ -1,0 +1,15 @@
+{
+  "scripts": {
+      "start": "node index.js"
+  },
+  "dependencies": {
+      "discord.js": "^14.14.1",
+      "express": "^4.18.2",
+      "fs": "^0.0.2",
+      "moment": "^2.30.1",
+      "mongoose": "^8.2.0"
+  },
+  "engines": {
+      "node": ">=16.11.0"
+  }
+}
