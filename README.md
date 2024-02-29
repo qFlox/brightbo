@@ -12,7 +12,7 @@
 - Pull requests containing commands should be placed like this - commands/(your-username-here)
 - Pull requests containing commands should NEVER be added to existing command folders.
 - Pull requests containing commands that require editing / addition to code outside of the command folder
-should be changed normally
+should be changed normally.
 
 ## Contributions // Pull requests
 ### To help keep this project alive, try contributing to help improve it.
