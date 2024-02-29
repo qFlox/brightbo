@@ -14,6 +14,11 @@
 - Pull requests containing commands that require editing / addition to code outside of the command folder
 should be changed normally.
 
+## Requirements
+
+- [Node.js](https://nodejs.org/en/) v16.11.0 or higher
+- [Git](https://git-scm.com/downloads)
+
 ## How to use
 - Open the terminal and run the following commands
 
