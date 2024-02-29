@@ -1,11 +1,20 @@
+---
+
 <div align="center">
    <img src="https://i.imgur.com/gVFCPok.png" />
 </div>
 
-# Info
-### This project may have some bugs, report them in the issues tab.
+---
 
-## Contributions
+## Notice
+- This porject only contains 1 example command.
+- We plan to add more commmands in the future.
+- Pull requests containing commands should be placed like this - commands/(your-username-here)
+- Pull requests containing commands should NEVER be added to existing command folders.
+- Pull requests containing commands that require editing / addition to code outside of the command folder
+should be changed normally
+
+## Contributions // Pull requests
 ### To help keep this project alive, try contributing to help improve it.
 
 We will review and help with all reasonable pull requests as long as the guidelines below are met.
