@@ -1,4 +1,3 @@
-// index.js
 const { ActivityType, Events } = require("discord.js");
 const { REST } = require("@discordjs/rest");
 const { Routes } = require("discord-api-types/v10");
@@ -22,16 +21,22 @@ module.exports = {
     setInterval(updateActivity, 30000);
 
     console.log(' ');
+    console.info(' | ')
     console.info(' |       _                   _          ');
     console.info(' |      |_) ._ o  _  |_ _|_ |_)  _      ');
     console.info(' |      |_) |  | (_| | | |_ |_) (_)     ');
     console.info(' |                _|                    ');
-    console.info(' |   ');
-    console.info(' |      Made by FireKrill and qFlux_');
-    console.info(' |      License: GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007.');
+    console.info(' | ');
+    console.info(' |      Made by FireKrill and qFlux_    ');
+    console.info(' |      Credit all the contributors.    ');
+    console.info(' | ')
+    console.info(' | Copyright (C) 2024  qFlux');
+    console.info(' | This program comes with ABSOLUTELY NO WARRANTY; for details check LICENSE');
+    console.info(' | This is free software, and you are welcome to redistribute it');
+    console.info(' | under certain conditions; check LICENSE for details.');
+    console.info(' | ')
     console.log(' ');
     console.log(' ');
-    console.log(`[✓] Bot online`);
     console.log(`[✓] Bot online`);
 
     try {
