@@ -34,7 +34,7 @@ npm install
 
 ### OR
 
--Download the .zip from the latest [release](https://github.com/qFlox/brightbo/releases) and upload it then run the following command.
+- Download the .zip from the latest [release](https://github.com/qFlox/brightbo/releases) and upload it then run the following command.
 
 ```
 npm install
