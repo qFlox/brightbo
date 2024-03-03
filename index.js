@@ -1,5 +1,6 @@
 const { Client, GatewayIntentBits, Partials } = require("discord.js");
 const { readdirSync } = require("fs");
+
 const client = new Client({
   intents: [
     GatewayIntentBits.Guilds,
