@@ -30,7 +30,7 @@ module.exports = {
     console.info(' |      Made by FireKrill and qFlux_    ');
     console.info(' |      Credit all the contributors.    ');
     console.info(' | ')
-    console.info(' | Copyright (C) 2024  qFlux');
+    console.info(' | Copyright (C) 2024  qFlux (qFlox) //and// FireKrill');
     console.info(' | This program comes with ABSOLUTELY NO WARRANTY; for details check LICENSE');
     console.info(' | This is free software, and you are welcome to redistribute it');
     console.info(' | under certain conditions; check LICENSE for details.');
@@ -38,6 +38,7 @@ module.exports = {
     console.log(' ');
     console.log(' ');
     console.log(`[✓] Bot online`);
+
 
     try {
       await rest.put(Routes.applicationCommands(client.user.id), {
