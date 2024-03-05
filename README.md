@@ -16,6 +16,8 @@
 - Follow the instructions in the how to use section.
 
 ## Notice
+- Main branch MAY contain experimental / features that dont work yet! Unless you know 
+  what you're doing use the latest release.
 - This porject only contains 1 example command.
 - We plan to add more commmands in the future.
 
