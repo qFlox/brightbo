@@ -2,6 +2,9 @@ const { ActivityType, Events } = require("discord.js");
 const { REST } = require("@discordjs/rest");
 const { Routes } = require("discord-api-types/v10");
 const activities = require("../config").activities;
+const mongoose = require("mongoose");
+const config = require("../config.js");
+const mongoConnection = config.mongoURL;
 
 module.exports = {
   name: Events.ClientReady,
@@ -22,15 +25,15 @@ module.exports = {
 
     console.log(' ');
     console.info(' | ')
-    console.info(' |       _                   _          ');
-    console.info(' |      |_) ._ o  _  |_ _|_ |_)  _      ');
-    console.info(' |      |_) |  | (_| | | |_ |_) (_)     ');
-    console.info(' |                _|                    ');
+    console.info(' |         _                   _             ');
+    console.info(' |        |_) ._ o  _  |_ _|_ |_)  _         ');
+    console.info(' |        |_) |  | (_| | | |_ |_) (_)        ');
+    console.info(' |                  _|                       ');
     console.info(' | ');
-    console.info(' |      Made by FireKrill and qFlux_    ');
-    console.info(' |      Credit all the contributors.    ');
+    console.info(' |        Made by FireKrill and qFlux_       ');
+    console.info(' |      Credit to all of the contributors.   ');
     console.info(' | ')
-    console.info(' | Copyright (C) 2024  qFlux (qFlox) //and// FireKrill');
+    console.info(' | Copyright (C) 2024  qFlux (qFlox) // and // FireKrill');
     console.info(' | This program comes with ABSOLUTELY NO WARRANTY; for details check LICENSE');
     console.info(' | This is free software, and you are welcome to redistribute it');
     console.info(' | under certain conditions; check LICENSE for details.');
@@ -38,7 +41,6 @@ module.exports = {
     console.log(' ');
     console.log(' ');
     console.log(`[✓] Bot online`);
-
 
     try {
       await rest.put(Routes.applicationCommands(client.user.id), {
@@ -48,6 +50,18 @@ module.exports = {
     } catch (error) {
       console.log(`[X] Error while registering slash commands`);
       console.error(error);
+    }
+
+    if (!mongoConnection) return;
+
+    await mongoose.connect(mongoConnection || '', {
+      serverSelectionTimeoutMS: 5000,
+    });
+
+    if (mongoose.connect) {
+      console.log('[✓] Database successfully registered');
+    } else {
+      console.log('[X] Database failed to connect.');
     }
   },
 };
