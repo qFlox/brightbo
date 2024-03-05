@@ -25,6 +25,7 @@
 
 - [Node.js](https://nodejs.org/en/) v16.11.0 or higher
 - [Git](https://git-scm.com/downloads)
+- [MongoDB](https://www.mongodb.com/)
 
 ## How to use
 - Open the terminal and run the following commands
