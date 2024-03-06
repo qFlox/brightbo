@@ -59,9 +59,9 @@ module.exports = {
     });
 
     if (mongoose.connect) {
-      console.log('[✓] Database successfully registered');
+      console.log('[✓] Database successfully connected');
     } else {
-      console.log('[X] Database failed to connect.');
+      console.log('[X] Database failed to connect');
     }
   },
 };
