@@ -2,7 +2,7 @@ const { EmbedBuilder, PermissionsBitField } = require("discord.js");
 const { SlashCommandBuilder } = require("@discordjs/builders");
 
 const prefix = {
-  name: "ping",
+  name: "github",
   cooldown: 5000,
   ownerOnly: false,
   run: async (client, message, args) => {
@@ -23,8 +23,8 @@ const prefix = {
 
 const slash = {
   data: new SlashCommandBuilder()
-    .setName("ping")
-    .setDescription("Pong!"),
+    .setName("github")
+    .setDescription("Credits to the bots github page!!"),
   cooldown: 5000,
   ownerOnly: false,
   run: async (client, interaction) => {
