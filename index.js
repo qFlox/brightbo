@@ -12,7 +12,6 @@ const client = new Client({
   shards: "auto"
 });
 
-
 const config = require("./config.js");
 const token = config.token;
 
