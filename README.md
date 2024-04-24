@@ -7,7 +7,7 @@
 ---
 
 ## How to host this bot (or any other bot) for free.
-- Go to this link - https://my.optikservers.com/join/HTeOIIt2thUvxg0K
+- Go to this link - https://my.optikservers.com/join/brightbo
 - Sign up to optikservers using the link above using your Discord account.
 - Press the 'Create server' button in the top left corner.
 - Give the server 80% cpu, 2000MB ram and 2gb disk/storage and mak sure to name it at the top
