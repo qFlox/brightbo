@@ -6,6 +6,10 @@
 
 ---
 
+## !! NOTICE !!
+Optikservers has ended free hosting.
+If you are a premium user you can continue to host your server for free.
+
 ## How to host this bot (or any other bot) for free.
 - Go to this link - https://my.optikservers.com/join/brightbo
 - Sign up to optikservers using the link above using your Discord account.
